@@ -12,4 +12,4 @@ ASK WHERE {
   FILTER( ?coWriterNum >= 2 )
 }
 
-#Were there any year when quarantino has worked with at least 2 cowriters on his films?
+#Were there any year when Quarantino has worked with at least 2 cowriters on his films?

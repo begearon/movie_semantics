@@ -1,0 +1,13 @@
+PREFIX ex:   <http://sample.com/facts/>
+PREFIX prop: <http://sample.com/prop/>
+DESCRIBE ?film WHERE { 
+  {
+    SELECT ?film ?year where {
+      ex:tarantino prop:isDirectorOf ?film .
+      ?film prop:year ?year .
+    }
+    ORDER BY ASC(?year) 
+	LIMIT 1
+  }
+}
+#describe The first film that was directed by Tarantino
