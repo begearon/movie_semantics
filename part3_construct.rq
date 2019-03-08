@@ -5,3 +5,4 @@ WHERE       {
    ex:tarantino prop:isWriterOf ?film .
    ?film prop:year ?year .
 }
+ORDER BY desc(?year)

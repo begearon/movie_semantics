@@ -1,7 +1,15 @@
 PREFIX ex:   <http://sample.com/facts/>
 PREFIX prop: <http://sample.com/prop/>
-CONSTRUCT  { ex:tarantino prop:isWriteFilmIn ?year }
-WHERE       { 
-   ex:tarantino prop:isWriterOf ?film .
-   ?film prop:year ?year .
+ASK WHERE { 
+  {
+    SELECT ?year (COUNT(?coWriter) as ?coWriterNum) where {
+      ex:tarantino prop:isWriterOf ?film .
+	  ?coWriter prop:isWriterOf ?film .
+	  FILTER (?coWriter!=ex:tarantino)
+    }
+    GROUP BY ?year
+  }
+  FILTER( ?coWriterNum >= 2 )
 }
+
+#Were there any year when quarantino has worked with at least 2 cowriters on his films?
