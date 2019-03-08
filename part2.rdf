@@ -1,0 +1,153 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://sample.com/prop/" >
+  <rdf:Description rdf:about="http://sample.com/facts/Kill_Bill_1">
+    <j.0:country rdf:resource="http://sample.com/facts/usa"/>
+    <j.0:language>English</j.0:language>
+    <j.0:year>2003</j.0:year>
+    <j.0:name>Kill Bill (volume 1)</j.0:name>
+    <j.0:hasGenre rdf:resource="http://sample.com/facts/thriller"/>
+    <j.0:hasGenre rdf:resource="http://sample.com/facts/action"/>
+    <j.0:hasGenre rdf:resource="http://sample.com/facts/crime"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sample.com/facts/daryl_hannah">
+    <j.0:isActorOf rdf:resource="http://sample.com/facts/Kill_Bill_1"/>
+    <j.0:nationality>American</j.0:nationality>
+    <j.0:height>178</j.0:height>
+    <j.0:age>58</j.0:age>
+    <j.0:name>Daryl Hannah</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sample.com/facts/use">
+    <j.0:name>USA</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sample.com/facts/action">
+    <j.0:name>Action</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sample.com/facts/tucker">
+    <j.0:isActorOf rdf:resource="http://sample.com/facts/fifth_element"/>
+    <j.0:nationality>American</j.0:nationality>
+    <j.0:height>185</j.0:height>
+    <j.0:age>47</j.0:age>
+    <j.0:name>Chris Tucker</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sample.com/facts/thriller">
+    <j.0:name>Thriller</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sample.com/facts/bender">
+    <j.0:producerOf rdf:resource="http://sample.com/facts/Kill_Bill_1"/>
+    <j.0:nationality>American</j.0:nationality>
+    <j.0:age>61</j.0:age>
+    <j.0:name>Lawrence Bender</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sample.com/facts/travolta">
+    <j.0:isActorOf rdf:resource="http://sample.com/facts/Pulp_Fiction"/>
+    <j.0:nationality>American</j.0:nationality>
+    <j.0:age>59</j.0:age>
+    <j.0:name>John Travolta</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sample.com/facts/willis">
+    <j.0:isActorOf rdf:resource="http://sample.com/facts/fifth_element"/>
+    <j.0:isActorOf rdf:resource="http://sample.com/facts/Pulp_Fiction"/>
+    <j.0:hasGenderOf rdf:resource="http://sample.com/facts/male"/>
+    <j.0:nationality>American</j.0:nationality>
+    <j.0:height>183</j.0:height>
+    <j.0:age>63</j.0:age>
+    <j.0:name>Bruce Willis</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sample.com/facts/richardson">
+    <j.0:isOperatorOf rdf:resource="http://sample.com/facts/Kill_Bill_1"/>
+    <j.0:nationality>American</j.0:nationality>
+    <j.0:age>63</j.0:age>
+    <j.0:name>Robert Richardson</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sample.com/facts/scifi">
+    <j.0:name>Sci-fi</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sample.com/facts/thurman">
+    <j.0:isActorOf rdf:resource="http://sample.com/facts/Pulp_Fiction"/>
+    <j.0:isWriterOf rdf:resource="http://sample.com/facts/Kill_Bill_1"/>
+    <j.0:age>43</j.0:age>
+    <j.0:name>Uma Thurman</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sample.com/facts/france">
+    <j.0:name>France</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sample.com/facts/besson">
+    <j.0:isDirectorOf rdf:resource="http://sample.com/facts/fifth_element"/>
+    <j.0:isWriterOf rdf:resource="http://sample.com/facts/fifth_element"/>
+    <j.0:nationality>French</j.0:nationality>
+    <j.0:age>53</j.0:age>
+    <j.0:name>Luc Besson</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sample.com/facts/fifth_element">
+    <j.0:country rdf:resource="http://sample.com/facts/uk"/>
+    <j.0:country rdf:resource="http://sample.com/facts/frace"/>
+    <j.0:language>English</j.0:language>
+    <j.0:year>1997</j.0:year>
+    <j.0:name>The Fifth Element</j.0:name>
+    <j.0:hasGenre rdf:resource="http://sample.com/facts/scifi"/>
+    <j.0:hasGenre rdf:resource="http://sample.com/facts/action"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sample.com/facts/arbogast">
+    <j.0:isOperatorOf rdf:resource="http://sample.com/facts/fifth_element"/>
+    <j.0:nationality>French</j.0:nationality>
+    <j.0:age>63</j.0:age>
+    <j.0:name>Thierry Arbogast</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sample.com/facts/tarantino">
+    <j.0:isActorOf rdf:resource="http://sample.com/facts/Kill_Bill_1"/>
+    <j.0:isDirectorOf rdf:resource="http://sample.com/facts/Kill_Bill_1"/>
+    <j.0:isDirectorOf rdf:resource="http://sample.com/facts/Pulp_Fiction"/>
+    <j.0:isWriterOf rdf:resource="http://sample.com/facts/Kill_Bill_1"/>
+    <j.0:isWriterOf rdf:resource="http://sample.com/facts/Pulp_Fiction"/>
+    <j.0:nationality>American</j.0:nationality>
+    <j.0:age>53</j.0:age>
+    <j.0:name>Quentin Tarantino</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sample.com/facts/uk">
+    <j.0:name>United Kingdom</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sample.com/facts/jovovich">
+    <j.0:isActorOf rdf:resource="http://sample.com/facts/fifth_element"/>
+    <j.0:nationality>Serbian</j.0:nationality>
+    <j.0:nationality>Russian</j.0:nationality>
+    <j.0:height>174</j.0:height>
+    <j.0:age>43</j.0:age>
+    <j.0:name>Milla Jovovich</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sample.com/facts/crime">
+    <j.0:name>Crime</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sample.com/facts/devito">
+    <j.0:producerOf rdf:resource="http://sample.com/facts/Kill_Bill_1"/>
+    <j.0:nationality>American</j.0:nationality>
+    <j.0:age>74</j.0:age>
+    <j.0:name>Danny DeVito</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sample.com/facts/male">
+    <j.0:name>Male</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sample.com/facts/lucy_liu">
+    <j.0:isActorOf rdf:resource="http://sample.com/facts/Kill_Bill_1"/>
+    <j.0:mother_language>Chinese</j.0:mother_language>
+    <j.0:nationality>American</j.0:nationality>
+    <j.0:height>160</j.0:height>
+    <j.0:age>50</j.0:age>
+    <j.0:name>Lucy Liu</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sample.com/facts/Pulp_Fiction">
+    <j.0:language>English</j.0:language>
+    <j.0:country rdf:resource="http://sample.com/facts/usa"/>
+    <j.0:name>Pulp Fiction</j.0:name>
+    <j.0:year>1994</j.0:year>
+    <j.0:hasGenre rdf:resource="http://sample.com/facts/thriller"/>
+    <j.0:hasGenre rdf:resource="http://sample.com/facts/crime"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sample.com/facts/samuel_l_jackson">
+    <j.0:isActorOf rdf:resource="http://sample.com/facts/Pulp_Fiction"/>
+    <j.0:nationality>American</j.0:nationality>
+    <j.0:height>189</j.0:height>
+    <j.0:age>70</j.0:age>
+    <j.0:name>Samuel L. Jackson</j.0:name>
+  </rdf:Description>
+</rdf:RDF>

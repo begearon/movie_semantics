@@ -1,0 +1,13 @@
+PREFIX ex:   <http://sample.com/facts/>
+PREFIX prop: <http://sample.com/prop/>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?aName ?height ?age 
+WHERE
+ {
+   ?actor prop:name ?aName .
+   ?actor prop:isActorOf [] .
+   OPTIONAL { ?actor prop:age ?age }
+   OPTIONAL { ?actor prop:height ?height }
+   FILTER ( (!bound(?height) || xsd:integer(?height) < 180) && (!bound(?age) || xsd:integer(?age) < 55))
+ }

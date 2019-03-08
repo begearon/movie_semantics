@@ -1,0 +1,12 @@
+PREFIX ex:   <http://sample.com/facts/>
+PREFIX prop: <http://sample.com/prop/>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?aName
+WHERE
+ {
+   ?actor prop:age ?age .
+   ?actor prop:name ?aName .
+   ?actor prop:isActorOf [] .
+   FILTER (xsd:integer(?age) > 51)
+ }

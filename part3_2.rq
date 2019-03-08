@@ -1,0 +1,11 @@
+PREFIX ex:      <http://sample.com/facts/>
+PREFIX prop:      <http://sample.com/prop/>
+
+SELECT ?mName ?dName
+WHERE
+ { 
+   ?movie prop:hasGenre ex:thriller .
+   ?director prop:isDirectorOf ?movie .
+   ?director prop:name ?dName .
+   ?movie prop:name ?mName .
+ }

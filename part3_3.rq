@@ -1,0 +1,10 @@
+PREFIX ex:      <http://sample.com/facts/>
+PREFIX prop:      <http://sample.com/prop/>
+
+SELECT ?mName
+WHERE
+ {
+   ?movie prop:hasGenre ex:thriller .
+   ?movie prop:hasGenre ex:crime .
+   ?movie prop:name ?mName .
+ }

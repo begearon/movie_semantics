@@ -1,0 +1,99 @@
+<http://sample.com/facts/Pulp_Fiction> <http://sample.com/prop/hasGenre> <http://sample.com/facts/crime> .
+<http://sample.com/facts/crime> <http://sample.com/prop/name> "Crime" .
+<http://sample.com/facts/thriller> <http://sample.com/prop/name> "Thriller" .
+<http://sample.com/facts/action> <http://sample.com/prop/name> "Action" .
+<http://sample.com/facts/scifi> <http://sample.com/prop/name> "Sci-fi" .
+<http://sample.com/facts/Pulp_Fiction> <http://sample.com/prop/hasGenre> <http://sample.com/facts/thriller> .
+<http://sample.com/facts/Pulp_Fiction> <http://sample.com/prop/year> "1994" .
+<http://sample.com/facts/Pulp_Fiction> <http://sample.com/prop/name> "Pulp Fiction" .
+<http://sample.com/facts/Pulp_Fiction> <http://sample.com/prop/country> <http://sample.com/facts/usa> .
+<http://sample.com/facts/use> <http://sample.com/prop/name> "USA" .
+<http://sample.com/facts/Pulp_Fiction> <http://sample.com/prop/language> "English" .
+<http://sample.com/facts/Kill_Bill_1> <http://sample.com/prop/hasGenre> <http://sample.com/facts/crime> .
+<http://sample.com/facts/Kill_Bill_1> <http://sample.com/prop/hasGenre> <http://sample.com/facts/action> .
+<http://sample.com/facts/Kill_Bill_1> <http://sample.com/prop/hasGenre> <http://sample.com/facts/thriller> .
+<http://sample.com/facts/Kill_Bill_1> <http://sample.com/prop/name> "Kill Bill (volume 1)" .
+<http://sample.com/facts/Kill_Bill_1> <http://sample.com/prop/year> "2003" .
+<http://sample.com/facts/Kill_Bill_1> <http://sample.com/prop/language> "English" .
+<http://sample.com/facts/Kill_Bill_1> <http://sample.com/prop/country> <http://sample.com/facts/usa> .
+<http://sample.com/facts/tarantino> <http://sample.com/prop/name> "Quentin Tarantino" .
+<http://sample.com/facts/tarantino> <http://sample.com/prop/age> "53" .
+<http://sample.com/facts/tarantino> <http://sample.com/prop/nationality> "American" .
+<http://sample.com/facts/tarantino> <http://sample.com/prop/isWriterOf> <http://sample.com/facts/Pulp_Fiction> .
+<http://sample.com/facts/tarantino> <http://sample.com/prop/isWriterOf> <http://sample.com/facts/Kill_Bill_1> .
+<http://sample.com/facts/tarantino> <http://sample.com/prop/isDirectorOf> <http://sample.com/facts/Pulp_Fiction> .
+<http://sample.com/facts/tarantino> <http://sample.com/prop/isDirectorOf> <http://sample.com/facts/Kill_Bill_1> .
+<http://sample.com/facts/tarantino> <http://sample.com/prop/isActorOf> <http://sample.com/facts/Kill_Bill_1> .
+<http://sample.com/facts/travolta> <http://sample.com/prop/name> "John Travolta" .
+<http://sample.com/facts/travolta> <http://sample.com/prop/age> "59" .
+<http://sample.com/facts/travolta> <http://sample.com/prop/nationality> "American" .
+<http://sample.com/facts/travolta> <http://sample.com/prop/isActorOf> <http://sample.com/facts/Pulp_Fiction> .
+<http://sample.com/facts/thurman> <http://sample.com/prop/name> "Uma Thurman" .
+<http://sample.com/facts/thurman> <http://sample.com/prop/age> "43" .
+<http://sample.com/facts/thurman> <http://sample.com/prop/isWriterOf> <http://sample.com/facts/Kill_Bill_1> .
+<http://sample.com/facts/thurman> <http://sample.com/prop/isActorOf> <http://sample.com/facts/Pulp_Fiction> .
+<http://sample.com/facts/samuel_l_jackson> <http://sample.com/prop/name> "Samuel L. Jackson" .
+<http://sample.com/facts/samuel_l_jackson> <http://sample.com/prop/age> "70" .
+<http://sample.com/facts/samuel_l_jackson> <http://sample.com/prop/height> "189" .
+<http://sample.com/facts/samuel_l_jackson> <http://sample.com/prop/nationality> "American" .
+<http://sample.com/facts/samuel_l_jackson> <http://sample.com/prop/isActorOf> <http://sample.com/facts/Pulp_Fiction> .
+<http://sample.com/facts/willis> <http://sample.com/prop/name> "Bruce Willis" .
+<http://sample.com/facts/willis> <http://sample.com/prop/age> "63" .
+<http://sample.com/facts/willis> <http://sample.com/prop/height> "183" .
+<http://sample.com/facts/willis> <http://sample.com/prop/nationality> "American" .
+<http://sample.com/facts/willis> <http://sample.com/prop/hasGenderOf> <http://sample.com/facts/male> .
+<http://sample.com/facts/male> <http://sample.com/prop/name> "Male" .
+<http://sample.com/facts/willis> <http://sample.com/prop/isActorOf> <http://sample.com/facts/Pulp_Fiction> .
+<http://sample.com/facts/willis> <http://sample.com/prop/isActorOf> <http://sample.com/facts/fifth_element> .
+<http://sample.com/facts/daryl_hannah> <http://sample.com/prop/name> "Daryl Hannah" .
+<http://sample.com/facts/daryl_hannah> <http://sample.com/prop/age> "58" .
+<http://sample.com/facts/daryl_hannah> <http://sample.com/prop/height> "178" .
+<http://sample.com/facts/daryl_hannah> <http://sample.com/prop/nationality> "American" .
+<http://sample.com/facts/daryl_hannah> <http://sample.com/prop/isActorOf> <http://sample.com/facts/Kill_Bill_1> .
+<http://sample.com/facts/lucy_liu> <http://sample.com/prop/name> "Lucy Liu" .
+<http://sample.com/facts/lucy_liu> <http://sample.com/prop/age> "50" .
+<http://sample.com/facts/lucy_liu> <http://sample.com/prop/height> "160" .
+<http://sample.com/facts/lucy_liu> <http://sample.com/prop/nationality> "American" .
+<http://sample.com/facts/lucy_liu> <http://sample.com/prop/mother_language> "Chinese" .
+<http://sample.com/facts/lucy_liu> <http://sample.com/prop/isActorOf> <http://sample.com/facts/Kill_Bill_1> .
+<http://sample.com/facts/bender> <http://sample.com/prop/name> "Lawrence Bender" .
+<http://sample.com/facts/bender> <http://sample.com/prop/age> "61" .
+<http://sample.com/facts/bender> <http://sample.com/prop/nationality> "American" .
+<http://sample.com/facts/bender> <http://sample.com/prop/producerOf> <http://sample.com/facts/Kill_Bill_1> .
+<http://sample.com/facts/fifth_element> <http://sample.com/prop/hasGenre> <http://sample.com/facts/action> .
+<http://sample.com/facts/fifth_element> <http://sample.com/prop/hasGenre> <http://sample.com/facts/scifi> .
+<http://sample.com/facts/fifth_element> <http://sample.com/prop/name> "The Fifth Element" .
+<http://sample.com/facts/fifth_element> <http://sample.com/prop/year> "1997" .
+<http://sample.com/facts/fifth_element> <http://sample.com/prop/language> "English" .
+<http://sample.com/facts/fifth_element> <http://sample.com/prop/country> <http://sample.com/facts/frace> .
+<http://sample.com/facts/fifth_element> <http://sample.com/prop/country> <http://sample.com/facts/uk> .
+<http://sample.com/facts/france> <http://sample.com/prop/name> "France" .
+<http://sample.com/facts/uk> <http://sample.com/prop/name> "United Kingdom" .
+<http://sample.com/facts/besson> <http://sample.com/prop/name> "Luc Besson" .
+<http://sample.com/facts/besson> <http://sample.com/prop/age> "53" .
+<http://sample.com/facts/besson> <http://sample.com/prop/nationality> "French" .
+<http://sample.com/facts/besson> <http://sample.com/prop/isWriterOf> <http://sample.com/facts/fifth_element> .
+<http://sample.com/facts/besson> <http://sample.com/prop/isDirectorOf> <http://sample.com/facts/fifth_element> .
+<http://sample.com/facts/arbogast> <http://sample.com/prop/name> "Thierry Arbogast" .
+<http://sample.com/facts/arbogast> <http://sample.com/prop/age> "63" .
+<http://sample.com/facts/arbogast> <http://sample.com/prop/nationality> "French" .
+<http://sample.com/facts/arbogast> <http://sample.com/prop/isOperatorOf> <http://sample.com/facts/fifth_element> .
+<http://sample.com/facts/richardson> <http://sample.com/prop/name> "Robert Richardson" .
+<http://sample.com/facts/richardson> <http://sample.com/prop/age> "63" .
+<http://sample.com/facts/richardson> <http://sample.com/prop/nationality> "American" .
+<http://sample.com/facts/richardson> <http://sample.com/prop/isOperatorOf> <http://sample.com/facts/Kill_Bill_1> .
+<http://sample.com/facts/devito> <http://sample.com/prop/name> "Danny DeVito" .
+<http://sample.com/facts/devito> <http://sample.com/prop/age> "74" .
+<http://sample.com/facts/devito> <http://sample.com/prop/nationality> "American" .
+<http://sample.com/facts/devito> <http://sample.com/prop/producerOf> <http://sample.com/facts/Kill_Bill_1> .
+<http://sample.com/facts/jovovich> <http://sample.com/prop/name> "Milla Jovovich" .
+<http://sample.com/facts/jovovich> <http://sample.com/prop/age> "43" .
+<http://sample.com/facts/jovovich> <http://sample.com/prop/height> "174" .
+<http://sample.com/facts/jovovich> <http://sample.com/prop/nationality> "Russian" .
+<http://sample.com/facts/jovovich> <http://sample.com/prop/nationality> "Serbian" .
+<http://sample.com/facts/jovovich> <http://sample.com/prop/isActorOf> <http://sample.com/facts/fifth_element> .
+<http://sample.com/facts/tucker> <http://sample.com/prop/name> "Chris Tucker" .
+<http://sample.com/facts/tucker> <http://sample.com/prop/age> "47" .
+<http://sample.com/facts/tucker> <http://sample.com/prop/height> "185" .
+<http://sample.com/facts/tucker> <http://sample.com/prop/nationality> "American" .
+<http://sample.com/facts/tucker> <http://sample.com/prop/isActorOf> <http://sample.com/facts/fifth_element> .

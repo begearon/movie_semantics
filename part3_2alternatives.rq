@@ -1,0 +1,24 @@
+PREFIX ex:   <http://sample.com/facts/>
+PREFIX prop: <http://sample.com/prop/>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?aName ?age ?height
+WHERE
+ {
+   ?actor prop:name ?aName .
+   { ex:tarantino prop:isWriterOf ?movie } 
+   UNION 
+   { ex:tarantino prop:isActorOf ?movie } 
+   UNION 
+   { ex:tarantino prop:isDirectorOf ?movie } 
+   OPTIONAL { ?actor prop:age ?age }
+   OPTIONAL { ?actor prop:height ?height }
+   { ?actor prop:isActorOf ?movie } 
+   UNION 
+   { ?actor prop:isDirectorOf ?movie } 
+   UNION 
+   { ?actor prop:isWriterOf ?movie } 
+   UNION 
+   { ?actor prop:isOperatorOf ?movie }
+ }
+ #workedwithtarantino
