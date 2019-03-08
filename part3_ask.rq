@@ -1,0 +1,7 @@
+PREFIX ex:   <http://sample.com/facts/>
+PREFIX prop: <http://sample.com/prop/>
+CONSTRUCT  { ex:tarantino prop:isWriteFilmIn ?year }
+WHERE       { 
+   ex:tarantino prop:isWriterOf ?film .
+   ?film prop:year ?year .
+}
