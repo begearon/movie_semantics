@@ -262,7 +262,6 @@
     <!-- http://www.semanticweb.org/dauvissat/ontologies/2019/2/untitled-ontology-3#Actor -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/dauvissat/ontologies/2019/2/untitled-ontology-3#Actor">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/dauvissat/ontologies/2019/2/untitled-ontology-3#listActors"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dauvissat/ontologies/2019/2/untitled-ontology-3#Person"/>
     </owl:Class>
     
@@ -362,12 +361,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/dauvissat/ontologies/2019/2/untitled-ontology-3#Writer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dauvissat/ontologies/2019/2/untitled-ontology-3#Person"/>
     </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/dauvissat/ontologies/2019/2/untitled-ontology-3#listActors -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/dauvissat/ontologies/2019/2/untitled-ontology-3#listActors"/>
     
 
 
