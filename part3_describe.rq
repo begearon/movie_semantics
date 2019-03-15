@@ -10,4 +10,5 @@ DESCRIBE ?film WHERE {
 	LIMIT 1
   }
 }
-#describe The first film that was directed by Tarantino
+#describe The first film that was
+# directed by Tarantino

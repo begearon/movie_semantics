@@ -1,0 +1,123 @@
+PREFIX ex:      <http://sample.com/facts/>
+PREFIX prop:      <http://sample.com/prop/>
+
+SELECT ?mName ?dName
+WHERE
+ { 
+   ?movie prop:hasGenre ex:thriller .
+   ?director prop:isDirectorOf ?movie .
+   ?director prop:name ?dName .
+   ?movie prop:name ?mName .
+ }
+ 
+ 
+ PREFIX ex:      <http://sample.com/facts/>
+PREFIX prop:      <http://sample.com/prop/>
+SELECT ?mName WHERE {
+   ?movie prop:hasGenre ex:thriller .
+   ?movie prop:hasGenre ex:crime .
+   ?movie prop:name ?mName .
+ }
+ 
+ 
+ 
+ PREFIX prop: <http://sample.com/prop/>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?aName
+WHERE
+ {
+   ?actor prop:age ?age .
+   ?actor prop:name ?aName .
+   ?actor prop:isActorOf [] .
+   FILTER (xsd:integer(?age) > 51)
+ }
+ 
+ 
+ PREFIX ex:   <http://sample.com/facts/>
+PREFIX prop: <http://sample.com/prop/>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?aName ?height ?age 
+WHERE
+ {
+   ?actor prop:name ?aName .
+   ?actor prop:isActorOf [] .
+   OPTIONAL { ?actor prop:age ?age }
+   OPTIONAL { ?actor prop:height ?height }
+   FILTER ( (!bound(?height) || xsd:integer(?height) < 180) && (!bound(?age) || xsd:integer(?age) < 55))
+ }
+ #young and short actors
+ 
+ 
+ 
+ 
+ PREFIX ex:   <http://sample.com/facts/>
+PREFIX prop: <http://sample.com/prop/>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?aName ?age ?height
+WHERE
+ {
+   ?actor prop:name ?aName .
+   { ex:tarantino prop:isWriterOf ?movie } 
+   UNION 
+   { ex:tarantino prop:isActorOf ?movie } 
+   UNION 
+   { ex:tarantino prop:isDirectorOf ?movie } 
+   OPTIONAL { ?actor prop:age ?age }
+   OPTIONAL { ?actor prop:height ?height }
+   { ?actor prop:isActorOf ?movie } 
+   UNION 
+   { ?actor prop:isDirectorOf ?movie } 
+   UNION 
+   { ?actor prop:isWriterOf ?movie } 
+   UNION 
+   { ?actor prop:isOperatorOf ?movie }
+ }
+ #workedwithtarantino
+ 
+ 
+ PREFIX ex:   <http://sample.com/facts/>
+PREFIX prop: <http://sample.com/prop/>
+ASK WHERE { 
+  {
+    SELECT ?year (COUNT(?coWriter) as ?coWriterNum) where {
+      ex:tarantino prop:isWriterOf ?film .
+	  ?coWriter prop:isWriterOf ?film .
+	  FILTER (?coWriter!=ex:tarantino)
+    }
+    GROUP BY ?year
+  }
+  FILTER( ?coWriterNum >= 2 )
+}
+
+#Were there any year when Quarantino has worked
+# with at least 2 cowriters on his films?
+
+
+PREFIX ex:   <http://sample.com/facts/>
+PREFIX prop: <http://sample.com/prop/>
+CONSTRUCT  { ex:tarantino prop:isWriteFilmIn ?year }
+WHERE       { 
+   ex:tarantino prop:isWriterOf ?film .
+   ?film prop:year ?year .
+}
+ORDER BY desc(?year)
+
+
+
+PREFIX ex:   <http://sample.com/facts/>
+PREFIX prop: <http://sample.com/prop/>
+DESCRIBE ?film WHERE { 
+  {
+    SELECT ?film ?year where {
+      ex:tarantino prop:isDirectorOf ?film .
+      ?film prop:year ?year .
+    }
+    ORDER BY ASC(?year) 
+	LIMIT 1
+  }
+}
+#describe The first film that was
+# directed by Tarantino
