@@ -1,17 +1,22 @@
 <http://sample.com/facts/Pulp_Fiction> <http://sample.com/prop/hasGenre> <http://sample.com/facts/crime> .
+<http://sample.com/facts/crime> <http://sample.com/prop/isGenreOf> <http://sample.com/facts/Pulp_Fiction> .
 <http://sample.com/facts/crime> <http://sample.com/prop/name> "Crime" .
 <http://sample.com/facts/thriller> <http://sample.com/prop/name> "Thriller" .
 <http://sample.com/facts/action> <http://sample.com/prop/name> "Action" .
 <http://sample.com/facts/scifi> <http://sample.com/prop/name> "Sci-fi" .
 <http://sample.com/facts/Pulp_Fiction> <http://sample.com/prop/hasGenre> <http://sample.com/facts/thriller> .
+<http://sample.com/facts/thriller> <http://sample.com/prop/isGenreOf> <http://sample.com/facts/Pulp_Fiction> .
 <http://sample.com/facts/Pulp_Fiction> <http://sample.com/prop/year> "1994" .
 <http://sample.com/facts/Pulp_Fiction> <http://sample.com/prop/name> "Pulp Fiction" .
 <http://sample.com/facts/Pulp_Fiction> <http://sample.com/prop/country> <http://sample.com/facts/usa> .
 <http://sample.com/facts/use> <http://sample.com/prop/name> "USA" .
 <http://sample.com/facts/Pulp_Fiction> <http://sample.com/prop/language> "English" .
 <http://sample.com/facts/Kill_Bill_1> <http://sample.com/prop/hasGenre> <http://sample.com/facts/crime> .
+<http://sample.com/facts/crime> <http://sample.com/prop/isGenreOf> <http://sample.com/facts/Kill_Bill_1> .
 <http://sample.com/facts/Kill_Bill_1> <http://sample.com/prop/hasGenre> <http://sample.com/facts/action> .
+<http://sample.com/facts/action> <http://sample.com/prop/isGenreOf> <http://sample.com/facts/Kill_Bill_1> .
 <http://sample.com/facts/Kill_Bill_1> <http://sample.com/prop/hasGenre> <http://sample.com/facts/thriller> .
+<http://sample.com/facts/thriller> <http://sample.com/prop/isGenreOf> <http://sample.com/facts/Kill_Bill_1> .
 <http://sample.com/facts/Kill_Bill_1> <http://sample.com/prop/name> "Kill Bill (volume 1)" .
 <http://sample.com/facts/Kill_Bill_1> <http://sample.com/prop/year> "2003" .
 <http://sample.com/facts/Kill_Bill_1> <http://sample.com/prop/language> "English" .
@@ -61,7 +66,9 @@
 <http://sample.com/facts/bender> <http://sample.com/prop/nationality> "American" .
 <http://sample.com/facts/bender> <http://sample.com/prop/producerOf> <http://sample.com/facts/Kill_Bill_1> .
 <http://sample.com/facts/fifth_element> <http://sample.com/prop/hasGenre> <http://sample.com/facts/action> .
+<http://sample.com/facts/action> <http://sample.com/prop/isGenreOf> <http://sample.com/facts/fifth_element> .
 <http://sample.com/facts/fifth_element> <http://sample.com/prop/hasGenre> <http://sample.com/facts/scifi> .
+<http://sample.com/facts/scifi> <http://sample.com/prop/isGenreOf> <http://sample.com/facts/fifth_element> .
 <http://sample.com/facts/fifth_element> <http://sample.com/prop/name> "The Fifth Element" .
 <http://sample.com/facts/fifth_element> <http://sample.com/prop/year> "1997" .
 <http://sample.com/facts/fifth_element> <http://sample.com/prop/language> "English" .
