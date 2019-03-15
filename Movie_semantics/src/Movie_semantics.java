@@ -71,19 +71,27 @@ class Movie_semantics
 	   queryString += getExcludedRows(excludedGenres, "Genre");
 	   
 		   queryString += "   \n }";
-		   System.out.println(queryString);
+		   //System.out.println(queryString);
 		   Query query = QueryFactory.create(queryString) ;
+		   System.out.print("Your films are: ");
 		   try (QueryExecution qexec = QueryExecutionFactory.create(query, model)) {
 		     ResultSet results = qexec.execSelect() ;
-		     ResultSetFormatter.out(System.out, results, query) ;
+		     boolean premier = true;
 		     for ( ; results.hasNext() ; )
 		     {
+		    	 if(!premier) {
+		    		 System.out.print(", ");
+		    	 }
 		       QuerySolution soln = results.nextSolution() ;
-		       RDFNode x = soln.get("mName") ;       // Get a result variable by name.
-		       Resource r2 = soln.getResource("name") ; // Get a result variable - must be a resource
-		       Literal l = soln.getLiteral("name") ;   // Get a result variable - must be a literal
+		       RDFNode x = soln.get("?mName") ;       // Get a result variable by name.
+		       System.out.print(x);
+		       premier = false;
+		     }
+		     if(premier) {
+		    	 System.out.print("no such film");
 		     }
 		   }
+  		 	System.out.print(".");
    }
    
    //returns whether the user wants to add more
